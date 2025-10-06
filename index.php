@@ -66,7 +66,9 @@ foreach ($db_films_data as $film_data) {
                                 Regista: 
                                 <span class="fw-normal"><?php echo $film->regista; ?></span>
                                 <?php if ($film->hasDirectorInfo()) { ?>
-                                    <span class="badge bg-success text-dark ms-1">✔️ Info OK</span>
+                                    <br>
+                                    <span class="badge bg-success text-dark ms-1 py-1">
+                                    ✔️ Info OK</span>
                                 <?php } ?>
                             </small>
                         </p>
@@ -93,7 +95,7 @@ foreach ($db_films_data as $film_data) {
                                     Voto: <?php echo $film->voto; ?>
                                     <?php if ($film->voto > 4) { ?>
                                         <span class="badge bg-success ms-1">TOP</span>
-                                    <?php } elseif ($film->voto <= 4 && $film->voto > 1) { ?>
+                                    <?php } elseif ($film->voto <= 4 && $film->voto > 2) { ?>
                                         <span class="badge bg-primary ms-1">BUONO</span>
                                     <?php } else { ?>
                                         <span class="badge bg-danger ms-1">SCONSIGLIATO</span>

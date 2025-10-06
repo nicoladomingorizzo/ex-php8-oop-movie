@@ -6,7 +6,7 @@ $db_generi = [
     'crimine' => ['nome' => 'Crimine', 'vietatoAiMinori' => true],
     'dramma' => ['nome' => 'Drammatico', 'vietatoAiMinori' => false],
     'noir' => ['nome' => 'Neo-noir', 'vietatoAiMinori' => false],
-    'azione' => ['nome' => 'Azione', 'vietatoAiMinori' => true],
+    'azione' => ['nome' => 'Azione', 'vietatoAiMinori' => false],
 ];
 
 $db_films_data = [
