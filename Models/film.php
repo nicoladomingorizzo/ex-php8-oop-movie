@@ -2,6 +2,8 @@
 
 class Film
 {
+    use extraInfo;
+
     public $titolo;
     public $anno;
     public $voto;
@@ -15,12 +17,23 @@ class Film
         return false;
     }
 
-    public function __construct($titolo, $anno, $voto, $generi)
+    public function __construct($titolo, $anno, $voto, $generi, $regista)
     {
         $this->titolo = $titolo;
         $this->anno = $anno;
         $this->voto = $voto;
         $this->generi = $generi;
+        $this->regista = $regista;
+    }
+
+    public function getGeneriAsString()
+    {
+        $nomiGeneri = [];
+        foreach ($this->generi as $genere) {
+            $nomiGeneri[] = $genere->genere;
+        }
+
+        return implode(', ', $nomiGeneri);
     }
 }
 

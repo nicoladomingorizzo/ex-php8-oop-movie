@@ -7,10 +7,8 @@ class Genere
 
     public function __construct($genere, $vietatoAiMinori)
     {
-        if ($genere == 'Horror') {
-            return true;
-        } else
-            false;
+        $this->genere = $genere;
+        $this->vietatoAiMinori = $vietatoAiMinori;
     }
 }
 
