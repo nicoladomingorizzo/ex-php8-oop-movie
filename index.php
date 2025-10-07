@@ -67,8 +67,8 @@ foreach ($db_films_data as $film_data) {
                                     <span class="fw-normal"><?php echo $film->regista; ?></span>
                                     <?php if ($film->hasDirectorInfo()) { ?>
                                         <br>
-                                        <!-- <span class="badge bg-success text-dark ms-1 py-1">
-                                        ✔️ Info OK</span> -->
+                                        <span class="badge bg-success text-dark ms-1 py-1">
+                                        ✔️ Info OK</span>
                                     <?php } ?>
                                 </small>
                             </p>
@@ -80,7 +80,7 @@ foreach ($db_films_data as $film_data) {
                             <div class="mt-auto pt-2 w-100">
                                 
                                 <div class="mb-3">
-                                    <strong class="d-block text-white-50 small mb-1">Generi:</strong>
+                                    <strong class="d-block text-white-50 small mb-1">Genere/i:</strong>
                                     <span class="d-block">
                                         <?php echo $film->getGeneriAsString(); ?>
                                         <?php if ($vietato) { ?>
