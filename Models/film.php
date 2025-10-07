@@ -2,7 +2,7 @@
 
 class Film
 {
-    use extraInfo;
+    use ExtraInfo;
 
     public $titolo;
     public $anno;

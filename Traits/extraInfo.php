@@ -1,6 +1,6 @@
 <?php
 
-trait extraInfo
+trait ExtraInfo
 {
     public $regista = null;
 
